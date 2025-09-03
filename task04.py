@@ -1,18 +1,15 @@
 class Flyer:
-    def __init__(self, name):
-        self.name = name
+    def fly(self):
+        print("Duck is flying")
 
 class Swimmer:
-    def __init__(self, name):
-        self.name = name        
+    def swim(self):
+        print("Duck is swimming")
 
-class Duck(Flyer,Swimmer):  
-    def bark(self):
-        print("Duck is flying Duck is swimming")
-
+class Duck(Flyer, Swimmer):
+    pass
 
 
 duck = Duck()
 duck.fly()
-duck.swim
-print(duck)
+duck.swim()
